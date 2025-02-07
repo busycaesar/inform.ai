@@ -2,15 +2,17 @@
 
 ## Description
 
-inform.ai is an application leveraging existing llms to assist users generate response to their queries. It fetches the information available on the internet related to the query of the user, stores the content in a vector database, retrieve the related content from the vector database, according to the query of the user and generates a response using the retireved information to satisfy the user's query.
+inform.ai is an application that uses existing Large Language Models (LLMs) to help users generate relevant responses to their queries. The application fetches data related to user queries from the internet, stores this content in a vector database, and retrieves relevant information from it based on the query. The generated responses are formed by using the retrieved content to accurately address user queries.
 
-The future plans with this project is to give the links to the pages from where the response given to the user was generated making it easy to the user to verify the information. Moreover, giving the user ability to counter question to the response generate by the user. Lastly, giving the user option to select from the list of available llms which will be used to generate the response based on the query. If the query requires a simple reasoning task, the user can choose to have a distilled model and vise versa if the query requires a model good with scientific reasoning.
+In the future, inform.ai will offer features such as providing links to the pages from which the responses are generated, enabling users to verify the information. The platform will also allow users to ask follow-up questions to the generated response. Additionally, users will have the ability to choose from a list of available LLMs, selecting the best fit based on the nature of their query. For example, a distilled model can be selected for simple reasoning tasks, while a more complex model suited for scientific reasoning can be chosen for queries requiring deeper analysis.
 
 ## Tech Stack
+![Image Alt](https://skillicons.dev/icons?i=react,vite,bootstrap,tailwindcss,flask,docker)
 
 ## How it looks?
 
 ## Features
+- Fetches information related to user queries from the internet, stores it in a vector database, and generates responses using the retrieved content.
 
 ## Author
 

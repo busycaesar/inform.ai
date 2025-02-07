@@ -1,0 +1,29 @@
+services:
+  # Vector DB for storing chunks and embeddings
+  db:
+    image: pgvector/pgvector:pg16
+    restart: always
+    container_name: pgvector
+    env_file:
+      - docker.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - llm_search_engine:/var/lib/postgresql/data
+
+  # To store the content and prompt the LLM.
+  content_driven_llm_api:
+    image: busycaesar/content_driven_llm_apis:latest
+    restart: always
+    container_name: cd_llm_api
+    env_file:
+      - docker.env
+    environment:
+      - POSTGRES_URL=db:5432
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  llm_search_engine:

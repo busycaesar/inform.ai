@@ -4,4 +4,13 @@
 
 body {
   background-color: rgb(33, 53, 53) !important;
+  color: white !important;
+  margin: 0 7em !important;
+}
+
+input,
+.button {
+  border-radius: 10em !important;
+  background-color: gray;
+  color: white;
 }

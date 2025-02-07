@@ -1,0 +1,1 @@
+from .search_result import get_search_result
